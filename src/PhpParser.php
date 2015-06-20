@@ -7,16 +7,16 @@ namespace Ackee\ViewPresenter;
  */
 final class PhpParser implements ParserInterface
 {
-	private $templatesDirectory;
+	private $templateDirectory;
 
-	public function setTemplatesDirectory($directory)
+    public function __construct($templateDirectory)
     {
-        $this->templatesDirectory = rtrim($directory, DIRECTORY_SEPARATOR)
+        $this->templateDirectory = rtrim($templateDirectory, DIRECTORY_SEPARATOR);
     }
 
 	private function getTemplatePathname($template)
     {
-        return $this->templatesDirectory . DIRECTORY_SEPARATOR .
+        return $this->templateDirectory . DIRECTORY_SEPARATOR .
             ltrim($template, DIRECTORY_SEPARATOR);
     }
 
