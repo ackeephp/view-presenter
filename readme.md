@@ -49,6 +49,17 @@ $view->render('home.php', [
 ]);
 ```
 
+We now have access to all the properties of the `SitePresenter` in the home.php view file.
+
+```php
+<header>
+    <h1><?=$site_name?></h1>
+    <h2><?=$site_description?></h2>
+</header>
+
+<p>Hi <?=$developer?></p>
+```
+
 ### Parsers
 
 Out of the box only a single Parser is provided and that is for PHP, if you would like to add another Parser, you will need to implement the ParserInterface.
