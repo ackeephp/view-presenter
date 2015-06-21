@@ -5,7 +5,7 @@
 It's recommended that you use [Composer](https://getcomposer.org/) to install ViewPresenter.
 
 ```bash
-composer require ackeephp/view-presenter
+composer require ackee/view-presenter
 ```
 
 ## Usage
