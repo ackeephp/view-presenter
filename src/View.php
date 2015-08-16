@@ -2,7 +2,7 @@
 
 namespace Ackee\ViewPresenter;
 
-final class View
+class View
 {
     private $parser;
     private $presentable;
