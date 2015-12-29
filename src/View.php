@@ -1,6 +1,5 @@
 <?php
-
-namespace Ackee\ViewPresenter;
+namespace Nueve\ViewPresenter;
 
 class View
 {

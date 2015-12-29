@@ -1,6 +1,5 @@
 <?php
-
-namespace Ackee\ViewPresenter;
+namespace Nueve\ViewPresenter;
 
 /**
  * Presentable
@@ -9,6 +8,13 @@ final class Presentable implements PresentableInterface
 {
 	protected $data = [];
 
+    /**
+     * Fetches the presenter class and return its data
+     *
+     * @param $template
+     * @param array $data
+     * @return array
+     */
 	public function parse($template, array $data = [])
 	{
 		$presenters = $this->get($template);
@@ -79,6 +85,7 @@ final class Presentable implements PresentableInterface
     /**
      * @param $offset
      * @param $value
+     * @return void
      */
     public function set($offset, $value)
     {

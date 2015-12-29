@@ -1,19 +1,19 @@
 {
-    "name": "ackee/view-presenter",
+    "name": "nueve/view-presenter",
     "autoload": {
         "psr-4": {
-            "Ackee\\ViewPresenter\\": "src/"
+            "Nueve\\ViewPresenter\\": "src/"
         }
     },
     "require": {
-        "php": ">=5.5.0"
+        "php": "^5.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8.0"
     },
     "autoload-dev": {
         "psr-4": {
-            "Ackee\\ViewPresenter\\Tests\\": "tests/"
+            "Nueve\\ViewPresenter\\Tests\\": "tests/"
         }
     }
 }

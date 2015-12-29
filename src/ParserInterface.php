@@ -1,6 +1,5 @@
 <?php
-
-namespace Ackee\ViewPresenter;
+namespace Nueve\ViewPresenter;
 
 interface ParserInterface
 {

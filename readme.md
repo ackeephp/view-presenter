@@ -5,7 +5,7 @@
 It's recommended that you use [Composer](https://getcomposer.org/) to install ViewPresenter.
 
 ```bash
-composer require ackee/view-presenter
+composer require nueve/view-presenter
 ```
 
 ## Usage
@@ -13,9 +13,9 @@ composer require ackee/view-presenter
 #### Initialize
 
 ```php
-$viewParser = new Ackee\ViewPresenter\PhpParser('template_directory_path');
-$presentable = new Ackee\ViewParser\Presentable();
-$view = new Ackee\ViewPresenter\View($viewParser, $presentable);
+$viewParser = new Nueve\ViewPresenter\PhpParser('template_directory_path');
+$presentable = new Nueve\ViewParser\Presentable();
+$view = new Nueve\ViewPresenter\View($viewParser, $presentable);
 ```
 
 Now lets create a ViewPresenter.
@@ -23,7 +23,7 @@ Now lets create a ViewPresenter.
 ```php
 <?php
 
-class SitePresenter implements \Ackee\ViewPresenter\PresenterInterface
+class SitePresenter implements \Nueve\ViewPresenter\PresenterInterface
 {
     public function data()
     {
@@ -66,7 +66,7 @@ Out of the box only a single Parser is provided and that is for PHP, if you woul
 
 ### View
 
-The `Ackee\ViewPresenter\View` class takes 3 arguments, the first is the `ParserInterface`, the second is a `PresentableInterface` class and the last is a config `array`.
+The `Nueve\ViewPresenter\View` class takes 3 arguments, the first is the `ParserInterface`, the second is a `PresentableInterface` class and the last is a config `array`.
 
 The array only contain a single property at the moment and that is the file extension property `file.ext`, which is by default set to `.php`, you should change this if you decide to use a different Parser. e.g. Twig `.twig`.
 
