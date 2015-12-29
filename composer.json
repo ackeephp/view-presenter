@@ -1,8 +1,21 @@
 {
     "name": "nueve/view-presenter",
+    "description": "A view helper system",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Smith",
+            "email": "a.smith@silentworks.co.uk"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Nueve\\ViewPresenter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nueve\\ViewPresenter\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -10,10 +23,5 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8.0"
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Nueve\\ViewPresenter\\Tests\\": "tests/"
-        }
     }
 }
