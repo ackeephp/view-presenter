@@ -4,7 +4,7 @@ namespace Nueve\ViewPresenter;
 /**
  * Presentable
  */
-final class Presentable implements PresentableInterface
+class Presentable implements PresentableInterface
 {
 	protected $data = [];
 

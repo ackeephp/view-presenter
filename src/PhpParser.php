@@ -4,9 +4,10 @@ namespace Nueve\ViewPresenter;
 /**
  * PhpParser
  */
-final class PhpParser implements ParserInterface
+class PhpParser implements ParserInterface
 {
-	private $templateDirectory;
+    private $templateDirectory;
+    private $fileExt = '.php';
 
     public function __construct($templateDirectory)
     {
@@ -15,6 +16,10 @@ final class PhpParser implements ParserInterface
 
 	private function getTemplatePathname($template)
     {
+        if (strpos($template, $this->fileExt) !== false) {
+            $template = $template . $this->fileExt;
+        }
+        
         return $this->templateDirectory . DIRECTORY_SEPARATOR .
             ltrim($template, DIRECTORY_SEPARATOR);
     }
