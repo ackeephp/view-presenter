@@ -16,7 +16,7 @@ class PhpParser implements ParserInterface
 
 	private function getTemplatePathname($template)
     {
-        if (strpos($template, $this->fileExt) !== false) {
+        if (strpos($template, $this->fileExt) === false) {
             $template = $template . $this->fileExt;
         }
         
